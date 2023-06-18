@@ -2,8 +2,12 @@ import React from "react";
 import "./Hero.css";
 import {HiLocationMarker} from 'react-icons/hi'
 import CountUp from "react-countup";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+ 
+  const { t } = useTranslation();
+
   return (
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
@@ -11,7 +15,7 @@ const Hero = () => {
         <div className="flexColStart hero-left">
           <div className="hero-title">
             <div className="orange-circle"/>
-            <h1>Discover <br/> Most Suitable <br/> Property</h1>
+            <h1>{t("dis")}<br/>{t('diss')}<br/>{t('disss')}<br/>{t('per')}</h1>
           </div>
           <div className="flexColStart hero-des">
             <span className="secondaryText">Find a variety of properties that suit you very easilty</span>
